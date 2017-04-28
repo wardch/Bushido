@@ -1,0 +1,100 @@
+- provide(:title, 'Home')
+.col-md-12.navigation-container
+  .hero-image
+    = image_tag('bushido_010.jpg')
+  .testimony
+    .testimony-header
+      | The Bushido Community
+    .testimony-pictures.col-md-12
+      .col-md-6
+        = image_tag('bushido_006.jpg')
+      .col-md-6.col-offset-md-6
+        = image_tag('bushido_006.jpg')
+      
+
+
+  .schedule
+    .schedule-header
+      | OUR SCHEDULE
+    = render partial: 'schedule'
+
+    table.table.table-striped#services-received-table
+      thead
+        tr
+          th Time
+          th Monday
+          th Tuesday
+          th Wednesday 
+          th Thursday
+          th Friday
+          th Saturday
+          th Sunday
+      tbody
+        tr
+          td 9AM
+          td Jiu Jitzu
+          td Jiu Jitzu
+          td Jiu Jitzu
+          td Jiu Jitzu
+          td Jiu Jitzu
+          td Jiu Jitzu
+          td Jiu Jitzu
+        tr
+          td 12:30PM
+          td Jiu Jitzu
+          td Jiu Jitzu
+          td Jiu Jitzu
+          td Jiu Jitzu
+          td Jiu Jitzu
+          td Jiu Jitzu
+          td Jiu Jitzu
+        tr
+          td 5:30PM
+          td Jiu Jitzu
+          td Jiu Jitzu
+          td Jiu Jitzu
+          td Jiu Jitzu
+          td Jiu Jitzu
+          td Jiu Jitzu
+          td Jiu Jitzu
+        tr
+          td 6:30PM
+          td Jiu Jitzu
+          td Jiu Jitzu
+          td Jiu Jitzu
+          td Jiu Jitzu
+          td Jiu Jitzu
+          td Jiu Jitzu
+          td Jiu Jitzu
+        tr
+          td 7:30PM
+          td Jiu Jitzu
+          td Jiu Jitzu
+          td Jiu Jitzu
+          td Jiu Jitzu
+          td Jiu Jitzu
+          td N/A
+          td N/A
+
+
+  .about-jimmy
+    .jimmys-header
+      | ABOUT JIMMY JARQUIN
+    .jimmys-pic.col-md-6
+      = image_tag('bushido_006.jpg')
+    .jimmy-description.col-md-6.col-md-offset-6
+      | Jimmy Jarquin is a black belt under Ralph Gracie and Kurt Osiander.
+      |  He’s been practicing Jiu Jitsu for over 15 years. Quick list of his grappling / Muai Thai 
+      |  achievements and who he’s fought. Where he’s trained (asia and europe) and the people that
+      |  he’s taught and there success so far.
+
+  .contact
+    .contact-header
+      | CONTACT US
+    .contact-details.col-md-3
+      // redo with flexbox
+      ul 
+        li Phone: 12345678890
+        li Email: bushido@gmail.com
+    .contact-map.col-md-9
+      
