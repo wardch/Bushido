@@ -1,11 +1,11 @@
-header.navbar.navbar-fixed-top.navbar-inverse
+header.navbar.navbar-fixed-top.navbar-default
   div.container
     #logo
       = link_to image_tag('bushido.png'), root_path
     #brand_title
       = link_to 'Bushido Fight Team', root_path
     nav
-      ul.nav.navbar-nav.navbar-right
+      ul.nav.navbar-nav.navbar-right#sub-nav
         li = link_to 'Home', root_path
         li = link_to 'Schedule', root_path
         li = link_to 'Media', root_path

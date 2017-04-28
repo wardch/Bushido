@@ -1,92 +1,67 @@
 - provide(:title, 'Home')
 .col-md-12.navigation-container
-  .hero-image
+  .hero-image.row
     = image_tag('bushido_010.jpg')
-  .testimony
+
+  .about-the-gym.row
+    .about-the-gym-header Bushido Fight Team
+    p
+      | Bushdio Fight Team is a friendly community of people from all backgrounds training
+      |  a variety of martial arts under the tutalage of Brazilian Jiu Jitzu black
+      |  belt and IBJFF World Champion Jimmy Jarquin.
+      |  We train Brazilian Jiu Jitzu, Muai Thai,
+      |  MMA and overall self defense. 
+      |  Bushdio is a Japense term that means 'way 'of the warror'. This means
+      |  applying the warriors spirit not only to fighting but to how you approach
+      |  and handle the  daily difficulties which invevitably arise in everyones
+      |  lives, in one manifestation or another.
+
+  .about-jimmy.row
+    .jimmys-header
+      | Jimmy Jarquin
+    .jimmys-pic.col-md-5
+      = image_tag('bushido_006.jpg')
+    .jimmys-description.col-md-7
+      p
+        | Jimmy Jarquin is a black belt under Ralph Gracie and Kurt Osiander.
+        |  He’s been practicing Jiu Jitsu for over 15 years, taught on 3
+        |  different continents and has trained with some of the best practioners in the world
+        |  (Gilbert Melendez, Jake Shields, BJ Penn) while also competing at the
+        |  highest levels too. 
+      ul.achievment-container
+        li = image_tag('first-place.svg')
+        li 3 x Naga North Cal Champion
+      ul.achievment-container
+        li = image_tag('first-place.svg')
+        li 2004 IBJJF No-Gi World Champion
+      ul.achievment-container
+        li = image_tag('first-place.svg')
+        li Winner of 2002 Super Fight Vs Nate Diaz (Brown Belt)
+
+
+  .testimony.row
     .testimony-header
       | The Bushido Community
-    .testimony-pictures.col-md-12
-      .col-md-6
-        = image_tag('bushido_006.jpg')
-      .col-md-6.col-offset-md-6
-        = image_tag('bushido_006.jpg')
-      
+      p
+        | Bushido is a welcoming bunch of people all trying to practice various
+        |  different partial arts and better each other and one another in the
+        |  process. Here is what some of our members are saying...
+    .testimony-pictures
+      = render partial: 'testimony/pictures'
+      = render partial: 'testimony/pictures'
+      = render partial: 'testimony/pictures'
 
+  .gym-media
+    .gym-media-header
+      | MEDIA FROM THE GYM
+    .gym-media-content
+      | do this with flexbox
 
   .schedule
     .schedule-header
       | OUR SCHEDULE
-    = render partial: 'schedule'
+    = render partial: 'schedule/timetable'
 
-    table.table.table-striped#services-received-table
-      thead
-        tr
-          th Time
-          th Monday
-          th Tuesday
-          th Wednesday 
-          th Thursday
-          th Friday
-          th Saturday
-          th Sunday
-      tbody
-        tr
-          td 9AM
-          td Jiu Jitzu
-          td Jiu Jitzu
-          td Jiu Jitzu
-          td Jiu Jitzu
-          td Jiu Jitzu
-          td Jiu Jitzu
-          td Jiu Jitzu
-        tr
-          td 12:30PM
-          td Jiu Jitzu
-          td Jiu Jitzu
-          td Jiu Jitzu
-          td Jiu Jitzu
-          td Jiu Jitzu
-          td Jiu Jitzu
-          td Jiu Jitzu
-        tr
-          td 5:30PM
-          td Jiu Jitzu
-          td Jiu Jitzu
-          td Jiu Jitzu
-          td Jiu Jitzu
-          td Jiu Jitzu
-          td Jiu Jitzu
-          td Jiu Jitzu
-        tr
-          td 6:30PM
-          td Jiu Jitzu
-          td Jiu Jitzu
-          td Jiu Jitzu
-          td Jiu Jitzu
-          td Jiu Jitzu
-          td Jiu Jitzu
-          td Jiu Jitzu
-        tr
-          td 7:30PM
-          td Jiu Jitzu
-          td Jiu Jitzu
-          td Jiu Jitzu
-          td Jiu Jitzu
-          td Jiu Jitzu
-          td N/A
-          td N/A
-
-
-  .about-jimmy
-    .jimmys-header
-      | ABOUT JIMMY JARQUIN
-    .jimmys-pic.col-md-6
-      = image_tag('bushido_006.jpg')
-    .jimmy-description.col-md-6.col-md-offset-6
-      | Jimmy Jarquin is a black belt under Ralph Gracie and Kurt Osiander.
-      |  He’s been practicing Jiu Jitsu for over 15 years. Quick list of his grappling / Muai Thai 
-      |  achievements and who he’s fought. Where he’s trained (asia and europe) and the people that
-      |  he’s taught and there success so far.
 
   .contact
     .contact-header
